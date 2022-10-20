@@ -12,7 +12,9 @@ export async function getAllFurniture(req, res) {
             return;
         });
     //Send back the array of furniture
-    res.send(collection)
+    res.set('Cache-Control', 'public, max-age=300,s-maxage=600')
+    //To come super fast
+    res.send(collection);
 
 }
 
