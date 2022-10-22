@@ -1,5 +1,5 @@
 import dbConnect from "./dbConnect.js";
-import { ObjectId } from "mongodb";
+import { ObjectId } from "mongodb"; //Importing ObjectId - unique identifiers for all the docs in db 
 //export const getAllFurniture = async (req, res) =>{ is the same as the line 4
 export async function getAllFurniture(req, res) {
     //First connect to the database 
@@ -37,7 +37,7 @@ export async function addNewFurniture(req, res) {
     res.status(201).send({ message: 'Furniture added' })
 
 }
-
+//Update
 export async function updateFurniture(req, res) {
     const { furnitureId } = req.params
     const db = dbConnect()
