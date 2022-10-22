@@ -1,4 +1,4 @@
-import express from 'express'
+import express from 'express' 
 import { addNewFurniture,getAllFurniture,findFurnitureByModel } from './furniture.js'
 
 

@@ -50,3 +50,7 @@ export async function updateFurniture(req, res) {
     res.status(202).send({ message: 'updated furniture' })
 }
 
+//We are connecting to our own database in our file (const db = dbConnect()s)
+//We are getting db.collection("furniture").find().toArray() getting our furniture collection into the database, setting it into an array
+//We are assigning a variable the variable is collection 
+//We get the 2 types of furniture returned as an array
